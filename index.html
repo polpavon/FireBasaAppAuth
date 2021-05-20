@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>fireBase</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCezb1FdTaTyOfLbYMJlwKX672_hBFfNB8",
+    authDomain: "authfire-25939.firebaseapp.com",
+    projectId: "authfire-25939",
+    storageBucket: "authfire-25939.appspot.com",
+    messagingSenderId: "756317912549",
+    appId: "1:756317912549:web:578f217680cd33d0b2030c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+
+<body>
+    <main class="wrap">
+        <section>
+            <div>
+                <h3>Registro de usuarios</h3>
+                <input id="email" type="email" placeholder="Ingrese email">
+                <input id="contrasena" type="password" placeholder="Ingrese contraseña">
+                <button onclick="registrar()">Registrar</button>
+            </div>
+            <br>
+
+            <div>
+                <h3>Ingreso de usuarios</h3>
+                <input id="email2" type="email" placeholder="Ingrese email">
+                <input id="contrasena2" type="password" placeholder="Ingrese contraseña">
+                <button onclick="ingresar()">Ingresar</button>
+            </div>
+    </main>
+
+    <script src="sandbox.js"></script>
+</body>
+</html>
